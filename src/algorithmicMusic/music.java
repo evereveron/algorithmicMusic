@@ -11,9 +11,17 @@ public class music implements JMC{
 		Part inst = new Part ("Snare", 0, 9);
 		Phrase phrase = new Phrase(0.0);
 		
+		Part violin = new Part ("Violin");
+		Phrase violinPhrase = new Phrase(0.0);
+		
 		for(short i=0; i<24; i++){
 			Note note = new Note(38, Math.random()*4);
 			phrase.addNote(note);
+		}
+		
+		for(int i=0; i<24; i++){
+			Note note = new Note(20, Math.random()*2);
+			violinPhrase.addNote(note);
 		}
 		
 		inst.addPhrase(phrase);
