@@ -22,12 +22,11 @@ public class music implements JMC{
 		notesToPart(phraseThree, 0.0, 10, NYLON_GUITAR);
 		notesToPart(phraseTwo, 20.0, 7, FLUTE);
 		notesToPart(phraseThree, 32.0, 7, HORN);
-		notesToPart(phraseFour, 0.0, 10, STEEL_DRUM);
-		notesToPart(phraseFive, 4.0, 20, VIOLIN);
+
 		
 		//ascore.setTempo(140.0);
 		
-		Write.midi(ascore, "manyInst2.mid");
+		Write.midi(ascore, "manyInst3.mid");
 	}
 	
 	private static void notesToPart(double[] notes, double startTime, int repeats, int instrument){
