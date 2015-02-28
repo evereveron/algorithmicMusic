@@ -20,7 +20,7 @@ public class music implements JMC{
 		}
 		
 		for(int i=0; i<24; i++){
-			Note note = new Note(20, Math.random()*2);
+			Note note = new Note(30, Math.random()*2);
 			violinPhrase.addNote(note);
 		}
 		
